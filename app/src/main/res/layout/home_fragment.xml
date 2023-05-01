@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:background="#BFBFBF">
+
+    <Button
+        android:id="@+id/deleteAllBtn"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#E44438"
+        android:text="Clear All lutemons" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO\nLUTEMON GAME"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="164dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/lutemongamelogo" />
+    <TextView
+        android:id="@+id/txtNumberOfLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Lutemons: x"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtTotalExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Experience Points: x EXP"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtNumOfBattles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Battles: x"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtTotalTrainingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days trained x"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtTotalDaysPassed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days passed: x"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+</FrameLayout>

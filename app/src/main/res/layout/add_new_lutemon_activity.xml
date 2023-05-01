@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bfbfbf">
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Lutemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:checkedButton="@id/radioWhite"
+        app:layout_constraintVertical_bias="0.448">
+
+        <RadioButton
+            android:id="@+id/radioWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="White" />
+
+        <RadioButton
+            android:id="@+id/radioBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Black" />
+
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Green" />
+
+        <RadioButton
+            android:id="@+id/radioOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Orange" />
+
+        <RadioButton
+            android:id="@+id/radioPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Pink" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextLutemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Lutemon Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are now creating a new Lutemon\n\nRemember that the choice of color\naffects the Lutemon's stats"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/creatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667"
+        android:textSize="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
